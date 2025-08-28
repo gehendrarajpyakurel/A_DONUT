@@ -1,11 +1,12 @@
 import React from "react";
+import Navigation from "./components/Navigation.jsx";
 
 function App() {
   return (
-    <div>
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is a simple portfolio website built with React.</p>
-    </div>
+    <>
+      <Navigation />
+      <div className="app-container"></div>
+    </>
   );
 }
 

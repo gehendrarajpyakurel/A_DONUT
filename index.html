@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut Arts</title>
     <style>
-      html, body, #root {
+      html,
+      body,
+      #root {
         margin: 0;
         padding: 0;
         height: 100%;
       }
     </style>
+    <script>
+      const title = document.querySelector("title");
+      const transitions = [
+        { text: "D", delay: 1 },
+        { text: "Do", delay: 2 },
+        { text: "Don", delay: 3 },
+        { text: "Donu", delay: 4 },
+        { text: "Donut ", delay: 5 },
+        { text: "Donut A", delay: 6 },
+        { text: "Donut Ar", delay: 7 },
+        { text: "Donut Ar", delay: 8 },
+        { text: "Donut Art", delay: 9 },
+        { text: "Donut Arts", delay: 10 },
+        { text: "Donut Art", delay: 11 },
+        { text: "Donut Ar", delay: 12 },
+        { text: "Donut A", delay: 13 },
+        { text: "Donut", delay: 14 },
+        { text: "Donut A", delay: 15 },
+        { text: "Donut Ar", delay: 16 },
+        { text: "Donut Art", delay: 17 },
+        { text: "Donut Arts", delay: 18 },
+        { text: "Donut Art", delay: 19 },
+        { text: "Donut Ar", delay: 20 },
+        { text: "Donut A", delay: 21 },
+        { text: "Donut", delay: 22 },
+        { text: "Donut A", delay: 23 },
+        { text: "Donut Ar", delay: 24 },
+        { text: "Donut Art", delay: 25 },
+        { text: "Donut Arts", delay: 26 },
+      ];
+
+      transitions.forEach(({ text, delay }) => {
+        setTimeout(() => (title.innerText = text), delay * 1000);
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>

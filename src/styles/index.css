@@ -1,6 +1,32 @@
-*{
-  color: white;
+:root {
+  --chinese-black: #0b0e22;
+  --mulberry: #ce579d;
+  --scooter: #2dbacb;
+  --ebony: #11142a;
+  --chambray: #2d5684;
+  --double-colonial-white: #f0dfae;
+  --platinum: #e8e1e1;
+  --steel-blue: #447bb2;
+  --tawny-port: #691d51;
+  --biscay: #1b365e;
+  --wine-berry: #3d1438;
+  --blue-dianne: #245c61;
 }
-body{
-  background-color: black;
+
+* {
+  color: var(--platinum);
+  outline: 1px solid white;
+}
+
+body {
+  height: 200dvh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: var(--chinese-black);
+}
+
+#root {
+  width: fit-content;
+  height: fit-content;
 }
