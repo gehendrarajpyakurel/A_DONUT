@@ -1,12 +1,13 @@
+// App.jsx
 import React from "react";
+import Overlay from "./components/Overlay.jsx";
 import Navigation from "./components/Navigation.jsx";
 
 function App() {
   return (
-    <>
-      <Navigation />
-      <div className="app-container"></div>
-    </>
+    <Overlay>
+        <Navigation />
+    </Overlay>
   );
 }
 

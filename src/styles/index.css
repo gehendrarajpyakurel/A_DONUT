@@ -13,9 +13,16 @@
   --blue-dianne: #245c61;
 }
 
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   color: var(--platinum);
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 }
 
 body {
