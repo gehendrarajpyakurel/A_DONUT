@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 2vw;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -15,19 +15,22 @@
   box-shadow: none;
   background-color: #0b0e22f6;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .nav-bar.shadow {
   box-shadow: 0px 2px 10px #435680;
 }
 
-.nav-bar>a{
+.nav-bar > a {
   text-decoration: none;
   color: var(--platinum);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
   padding: 8px 12px;
   border-radius: 8px;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }

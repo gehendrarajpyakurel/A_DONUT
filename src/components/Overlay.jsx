@@ -1,5 +1,6 @@
 // Overlay.jsx
 import React, { useEffect, useRef } from "react";
+import Content from "./Content.jsx";
 
 function Overlay({ children }) {
   const overlayRef = useRef(null);
@@ -17,7 +18,7 @@ function Overlay({ children }) {
     timers.current.push(
       setTimeout(() => {
         if (hex) hex.style.strokeDashoffset = "0";
-        
+
         timers.current.push(
           setTimeout(() => {
             overlay.classList.remove("fade-in");
@@ -29,11 +30,11 @@ function Overlay({ children }) {
                   content.style.opacity = 1;
                   content.style.pointerEvents = "auto";
                 }
-              }, 1000)
+              }, 1000),
             );
-          }, 1300)
+          }, 1300),
         );
-      }, 1000)
+      }, 1000),
     );
 
     return () => timers.current.forEach(clearTimeout);
@@ -64,9 +65,14 @@ function Overlay({ children }) {
       <div
         className="content-cnt"
         ref={contentRef}
-        style={{ opacity: 0, pointerEvents: "none", transition: "opacity 0.5s" }}
+        style={{
+          opacity: 0,
+          pointerEvents: "none",
+          transition: "opacity 0.5s",
+        }}
       >
         {children}
+        <Content></Content>
       </div>
     </>
   );

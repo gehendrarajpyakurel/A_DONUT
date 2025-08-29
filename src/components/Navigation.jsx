@@ -14,7 +14,7 @@ function Navigation() {
           const currentScroll =
             window.pageYOffset || document.documentElement.scrollTop;
           currentScroll > lastScrollTop.current
-            ? (navbar.style.top = "-100px")
+            ? (navbar.style.top = "-200px")
             : (navbar.style.top = "0");
           currentScroll > 0
             ? navbar.classList.add("shadow")
@@ -34,6 +34,13 @@ function Navigation() {
     <nav ref={navRef} className="navigation nav-bar">
       <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#home">
+        <img
+          src="/favicon.png"
+          alt="Logo"
+          style={{ objectFit: "contain", width: "100px", height: "100px" }}
+        />
+      </a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>

@@ -1,0 +1,11 @@
+.content-cnt {
+  padding-top: 100px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: inherit;
+  align-items: center;
+  justify-content: center;
+}
